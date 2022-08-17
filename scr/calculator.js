@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const getRandom = (max) => Math.round(Math.random() * max);
+export const getRandom = (max) => Math.round(Math.random() * max);
 
 const calculator = (name) => {
   console.log('What is the result of the expression?');
