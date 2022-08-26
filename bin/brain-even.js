@@ -1,5 +1,5 @@
-import { userName } from '../scr/cli.js';
-import evenGame from '../scr/even-game.js';
+import { userName } from '../src/cli.js';
+import evenGame from '../src/even-game.js';
 
 // eslint-disable-next-line no-console
 console.log('Welcome to the Brain Games!');

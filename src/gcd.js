@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { getRandom } from '../scr/calculator.js';
+import { getRandom } from '../src/calculator.js';
 
 const getNum = (x, y) => {
   if (y) {

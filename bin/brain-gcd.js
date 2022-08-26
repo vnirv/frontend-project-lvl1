@@ -1,5 +1,5 @@
-import { userName } from '../scr/cli.js';
-import gcd from '../scr/gcd.js';
+import { userName } from '../src/cli.js';
+import gcd from '../src/gcd.js';
 
 // eslint-disable-next-line no-console
 console.log('Welcome to the Brain Games!');
