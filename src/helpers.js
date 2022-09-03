@@ -20,7 +20,7 @@ export const congradulate = (name) => console.log(`Congratulations, ${name}!`);
 export const boolToString = (condition) => (condition ? 'yes' : 'no');
 
 export const getAnswerOn = (question) => {
-  console.log('Question: ', question);
+  console.log(`Question: ${question}`);
   return readlineSync.question('Your answer: ');
 };
 
