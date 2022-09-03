@@ -19,7 +19,7 @@ const gcd = (name) => {
   runGame(() => {
     const x = getRandom(20);
     const y = getRandom(20);
-    const expr = `${x},${y}`;
+    const expr = `${x} ${y}`;
 
     const anwserU = getAnswerOn(expr);
 
