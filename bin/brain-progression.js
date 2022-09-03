@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { userName } from '../src/cli.js';
 import missingNum from '../src/progression.js';
 

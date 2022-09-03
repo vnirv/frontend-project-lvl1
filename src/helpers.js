@@ -12,6 +12,7 @@ export const showMessage = (answer, expected, name) => {
 
   console.log(`${answer} is wrong answer ;(. Correct answer was ${expected}`);
   console.log(`Let's try again, ${name}!`);
+  process.exit(1);
 };
 
 export const congradulate = (name) => console.log(`Congratulations, ${name}!`);

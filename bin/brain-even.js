@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { userName } from '../src/cli.js';
 import evenGame from '../src/even-game.js';
 
