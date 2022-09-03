@@ -1,8 +1,8 @@
-import readlineSync from 'readline-sync';
-
-import { getRandom } from './helpers.js';
-
-export const getRandomMinMax = (min, max) => min + Math.round(Math.random() * (max - min));
+import {
+  congradulate,
+  getRandom,
+  showMessage,
+} from './helpers.js';
 
 const calculator = (name) => {
   console.log('What is the result of the expression?');
@@ -29,13 +29,8 @@ const calculator = (name) => {
         result = null;
     }
 
-    console.log('Question: ', expr);
-    const anwserU = readlineSync.question('Your answer: ');
-    const expectedAnswer = (anwserU === result.toString() ? 'Correct!' : `'${anwserU}' is wrong answer ;(. Correct answer was '${result}'.
-    Let's try again, ${name}!`);
-
-    console.log(expectedAnswer);
+    showMessage(expr, result, name);
   }
-  console.log(`Congratulations, ${name}!`);
+  congradulate(name);
 };
 export default calculator;
