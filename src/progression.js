@@ -1,17 +1,11 @@
-/* eslint-disable no-console */
-import readlineSync from 'readline-sync';
-import { getRandomMinMax, getRandom } from '../src/calculator.js';
-
-const showMessage = (answer, expected, name) => {
-  if (answer === expected) {
-    console.log('Correct');
-
-    return;
-  }
-
-  console.log(`${answer} is wrong answer ;(. Correct answer was ${expected}`);
-  console.log(`Let's try again, ${name}!`);
-};
+import {
+  getRandomMinMax,
+  getRandom,
+  showMessage,
+  congradulate,
+  getAnswerOn,
+  runGame,
+} from './helpers.js';
 
 const createMissingProgression = () => {
   const arr = [];
@@ -28,15 +22,12 @@ const createMissingProgression = () => {
 };
 
 const missingNum = (name) => {
-  for (let i = 0; i < 3; i += 1) {
+  runGame(() => {
     const [arr, expected] = createMissingProgression();
 
-    console.log('Question: ', arr);
-    const anwser = readlineSync.question('Your answer: ');
+    showMessage(getAnswerOn(arr), expected, name);
+  });
 
-    showMessage(anwser, expected, name);
-  }
-
-  console.log(`Congratulations, ${name}!`);
+  congradulate(name);
 };
 export default missingNum;

@@ -1,5 +1,0 @@
-make --dry-run --always-make --keep-going --print-directory
-make: Entering directory `/Users/pk/projects/frontend-project-lvl1'
-node bin/brain-games.js
-make: Leaving directory `/Users/pk/projects/frontend-project-lvl1'
- 
