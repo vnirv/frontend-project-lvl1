@@ -30,7 +30,7 @@ const calculator = (name) => {
         result = null;
     }
 
-    showMessage(getAnswerOn(expr), result, name);
+    showMessage(getAnswerOn(expr), result.toString(), name);
   }
   congradulate(name);
 };
