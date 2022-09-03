@@ -2,6 +2,7 @@ import {
   congradulate,
   getRandom,
   showMessage,
+  getAnswerOn,
 } from './helpers.js';
 
 const calculator = (name) => {
@@ -29,7 +30,7 @@ const calculator = (name) => {
         result = null;
     }
 
-    showMessage(expr, result, name);
+    showMessage(getAnswerOn(expr), result, name);
   }
   congradulate(name);
 };
